@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:11:40 by jkosaka           #+#    #+#             */
-/*   Updated: 2022/04/01 20:40:33 by jkosaka          ###   ########.fr       */
+/*   Updated: 2022/06/18 12:11:01 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,12 @@ void	ft_putstr_fd(char *s, int fd)
 	if (!s)
 		return ;
 	len = ft_strlen(s);
-	write_fd(&s, fd, len % INT_MAX);
-	len /= INT_MAX;
-	while (len--)
+	while (len > INT_MAX)
+	{
 		write_fd(&s, fd, INT_MAX);
+		len -= INT_MAX;
+	}
+	write_fd(&s, fd, len);
 }
 
 // #include <stdio.h>
