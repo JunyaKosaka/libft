@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 00:25:31 by jkosaka           #+#    #+#             */
-/*   Updated: 2022/04/01 20:40:33 by jkosaka          ###   ########.fr       */
+/*   Updated: 2022/07/02 13:33:47 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		cur = cur->next;
 		ft_lstdelone(prev, (*del));
 	}
-	*lst = NULL;
 }

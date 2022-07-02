@@ -6,7 +6,7 @@
 /*   By: jkosaka <jkosaka@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 15:19:14 by jkosaka           #+#    #+#             */
-/*   Updated: 2022/04/01 20:40:33 by jkosaka          ###   ########.fr       */
+/*   Updated: 2022/07/02 10:34:29 by jkosaka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 // int	main(void)
 // { 
-// 	char	s[10][10] = {"abc", "012", "", "\0", " abc", end"};
+// 	char	s[10][10] = {"abc", "012", "", "\0", " abc", "end"};
 // 	int		i = -1;
 // 	char	*t;
 
